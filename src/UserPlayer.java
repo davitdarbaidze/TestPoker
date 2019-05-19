@@ -18,10 +18,10 @@ public class UserPlayer implements Player {
     @Override
     public boolean areYouIn() {
         // in this method we are asking user about permissions if he/she wants to play more or not.
-        System.out.println("Your cards: " + this.cards);
-        System.out.println("Table: " + String.join("|", this.flop,  this.turn, this.river));
+        System.out.println("This will be your cards: " + this.cards);
+        System.out.println("Cards on Table: " + String.join("|", this.flop,  this.turn, this.river));
 
-        System.out.print("Are you in? (y/n) : ");
+        System.out.print("do you want to continue playing? (y/n) : ");
         String play =  scan.next();
         System.out.println(play.length());
         System.out.println();

@@ -47,7 +47,7 @@ public class ComputerPlayer implements Player {
 
     @Override
     public void result(boolean youWon, int numberOfBetsWon) {
-        System.out.println(youWon ? "You won!" : "You lost."
+        System.out.println(youWon ? "You won1!" : "You lost."
                 + " Number of bets won: " + numberOfBetsWon);
     }
 }
