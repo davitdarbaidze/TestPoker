@@ -29,6 +29,23 @@ public class UserPlayer implements Player {
         return play.charAt(0) == 'y' ? true : false;
     }
 
+    public void winningCombination(){
+
+        String royalFlush ="Combinations for winning from strongest hand to weakest hand: \r\nA, K, Q, J, 10, all the same suit.";
+        String straightFlush = "Five cards in a sequence, all in the same suit.";
+        String fourKind="All four cards of the same rank. ";
+        String fullHouse="Three of a kind with a pair. ";
+        String flush = "Any five cards of the same suit, but not in a sequence. ";
+        String straight = "Five cards in a sequence, but not of the same suit. ";
+        String threeOfAKind="Three cards of the same rank. ";
+        String twoPair="Two different pairs. ";
+        String pair ="Two cards of the same rank. ";
+        String highCard="the highest card is winner";
+        String winningCombinations = royalFlush + "\r\n" + straightFlush +"\r\n"+fourKind+"\r\n"+fullHouse+"\r\n"+flush
+                +"\r\n"+straight+"\r\n"+threeOfAKind+"\r\n"+twoPair+"\r\n"+pair+"\r\n"+highCard+"\r\n";
+        System.out.println(winningCombinations);
+    }
+
     @Override
     public void deal(String cards, int numberOfPlayers) {
         //method to deal the cards and number of players

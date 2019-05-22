@@ -11,6 +11,7 @@ public class Main {
 
         Party party = new Party();
         party.addPlayers(userPlayer, computerPlayer);
+        userPlayer.winningCombination();
         party.play();
 
         System.out.println("Game over");
